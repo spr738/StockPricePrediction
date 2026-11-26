@@ -1,66 +1,41 @@
-# Final-Year-Machine-Learning-Stock-Price-Prediction-Project
-Final Year B.tech Project on Machine Learning Stock Prediction through Deep Learning
+# Google Stock Price Prediction — LSTM Study
 
-# Stock-Price-Prediction
-Top Class Stock Price Prediction Project through Machine Learning Algorithms for Google. Easy Understanding and Implementation.
+A learning repository exploring historical Google stock-price data, preprocessing, visualization, and the foundations of LSTM-based time-series forecasting.
 
-### Project PPT [**LINK**](https://github.com/Vatshayan/Final-Year-Machine-Learning-Stock-Price-Prediction-Project/blob/main/Stock_price%20_prediction.pptx)
+## Repository contents
 
-### Stock Price Prediction :
+- `Stocks_code.ipynb` — notebook with the currently committed data-loading, preprocessing, and visualization steps.
+- `stocks_code.py` — Python version of the starter preprocessing workflow.
+- `Stock Price Prediction.docx` — project report/documentation.
+- `Stock Price Prediction_synopsis.pdf` — project synopsis.
+- `Stock_price _prediction.pptx` — presentation.
 
-Stock (also known as equity) is a security that represents the ownership of a fraction of a corporation. This entitles the owner of the stock to a proportion of the corporation's assets and profits equal to how much stock they own. Units of stock are called "shares." 
-A stock is a general term used to describe the ownership certificates of any company.
-Stock prices change everyday by market forces. By this we mean that share prices change because of supply and demand. If more people want to buy a stock (demand) than sell it (supply), then the price moves up. Conversely, if more people wanted to sell a stock than buy it, there would be greater supply than demand, and the price would fall.
-Understanding supply and demand is easy. 
-So, why do stock prices change? The best answer is that nobody really knows for sure. Some believe that it isn't possible to predict how stocks will change in price while others think that by drawing charts and looking at past price movements, you can determine when to buy and sell. The only thing we do know as a certainty is that stocks are volatile and can change in price extremely rapidly.
+## Current implementation status
 
+The committed notebook and Python script currently demonstrate loading the Google training CSV, selecting the opening-price column, and plotting the series. The complete model-training, evaluation, and prediction workflow is not present in these two code files yet.
 
-### Understanding the Problem Statement
-We’ll dive into the implementation part of this Project soon, but first it’s important to establish what we’re aiming to solve. Broadly, stock market analysis is divided into two parts – Fundamental Analysis and Technical Analysis.
-Fundamental Analysis involves analyzing the company’s future profitability on the basis of its current business environment and financial performance.
-Technical Analysis, on the other hand, includes reading the charts and using statistical figures to identify the trends in the stock market.
-As you might have guessed, our focus will be on the technical analysis and visualization part. We’ll be using a dataset from Google stock Price test and train.
- 
- 
-### Implementation:
+The notebook expects a file named `Google_Stock_Price_Train.csv`, which is not currently included in this repository. Add the dataset locally before running the notebook.
 
-1.Using Sckiit Learning( Machine Learning model)
+## Run the starter workflow
 
-2.Data Preprocessing using dataset
+Install the required packages:
 
-3.Visualization of Dataset
+```bash
+python -m pip install numpy pandas matplotlib
+```
 
-4.Feature Scaling 
+Place `Google_Stock_Price_Train.csv` beside the notebook/script, then run:
 
-5.Preparing the Datasets for training 
+```bash
+python stocks_code.py
+```
 
-6.Reshaping the datasets
+Or open `Stocks_code.ipynb` in Jupyter Notebook or Google Colab.
 
-7.Model development
+## Source acknowledgement
 
-8.Implementation of sequential, dense, LSTM and dropout.
+This repository is a study/portfolio adaptation of material from the original [Final-Year Machine Learning Stock Price Prediction project](https://github.com/Vatshayan/Final-Year-Machine-Learning-Stock-Price-Prediction-Project). The source reference is retained to acknowledge the origin of the adapted material.
 
-9.Preprocessing the Data
+## Important note
 
-10.Predicting the Output
-
-11.Result visualization 
- 
-### Research Paper
-
-Project is totally based on research papers as project predict output using LSTM based deep learning models:
-
-1. https://arxiv.org/abs/2009.10819
-
-2. https://www.aclweb.org/anthology/W19-6403.pdf
-
-3. https://www.sciencedirect.com/science/article/pii/S1877050920304865
-
-
-### Website : https://www.finalproject.in/
-
-### 1000 Computer Science Projects : https://www.computer-science-project.in/
-
-### Youtube Video of this Project: https://www.youtube.com/watch?v=44u5oU9MQGg
-
-Mail/Message me for Projects Help 🙏🏻
+This is an educational time-series project, not financial advice or a reliable trading signal. Historical prices do not guarantee future performance.
